@@ -1143,48 +1143,26 @@
         }
     </style>
     <style>
-        .menu {
+ .menu {
   list-style: none;
   padding: 0;
   margin: 0;
   display: none;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  z-index: 1;
-}
-
-.menu.active {
-  display: block;
 }
 
 .menu li {
-  padding: 15px 20px;
-  border-bottom: 1px solid #666;
-}
-
-.menu li:last-child {
-  border-bottom: none;
+  padding: 10px;
 }
 
 .menu li a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 
-  .menu {
-    display: flex;
-    position: static;
-    background-color: transparent;
-  }
-
-  .menu li {
-    padding: 0 15px;
-    border-bottom: none;
-  }
+        .menu.active {
+  display: block;
 }
+
     </style>
 
     <link rel='stylesheet' id='yotako_styles-css'
@@ -1271,9 +1249,18 @@
                     }, 500);
 
                 });
-
-
             </script>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const hamburger = document.querySelector(".hamburger-menu");
+                const menu = document.querySelector(".menu");
+                hamburger.addEventListener("click", function() {
+                menu.classList.toggle("active");
+              });
+        });
+        </script>
+
         </div>
 
 
@@ -1631,13 +1618,7 @@
         }());
 
     </script>
-    <script id = "menu">
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
-
+    
 </body>
 
 </html>
