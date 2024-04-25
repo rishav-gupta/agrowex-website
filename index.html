@@ -1142,6 +1142,33 @@
             z-index: 100000;
         }
     </style>
+    <style id ='menu'>
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust distance from the icon */
+  right: 0;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+    </style>
     <link rel='stylesheet' id='yotako_styles-css'
         href='style.css'
         media='all' />
