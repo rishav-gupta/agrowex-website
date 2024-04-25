@@ -1142,7 +1142,7 @@
             z-index: 100000;
         }
     </style>
-    <style id ='menu'>
+    <style>
 .menu {
   list-style: none;
   padding: 0;
@@ -1167,7 +1167,6 @@
   text-decoration: none;
   color: #fff;
 }
-
     </style>
     <link rel='stylesheet' id='yotako_styles-css'
         href='style.css'
@@ -1562,7 +1561,18 @@
                                                 <li>
                                                     <a href="#about1">About Us</a>
                                                 </li>
-                                            </ul>      
+                                            </ul>   
+                                            
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const menu = document.querySelector(".menu");
+        hamburger.addEventListener("click", function() {
+        menu.classList.toggle("active");
+  });
+});
+
+    </script>
                                         </figure>
                                     </div>
                                 </div>
@@ -1615,16 +1625,6 @@
             // Inject the skip link.
             sibling.parentElement.insertBefore(skipLink, sibling);
         }());
-
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.querySelector(".hamburger-menu");
-        const menu = document.querySelector(".menu");
-        hamburger.addEventListener("click", function() {
-        menu.classList.toggle("active");
-  });
-});
 
     </script>
     
