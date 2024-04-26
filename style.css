@@ -1091,7 +1091,7 @@ body
 .menu {
   list-style: none;
   padding: 0;
-  margin: -95px;
+  margin: 0;
   display: none;
   position: absolute;
   right: 0;
