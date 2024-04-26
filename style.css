@@ -1088,6 +1088,30 @@ body
      .imageview_79898f81e6c8{
 	width:44px;height:44px;z-index:2;position:absolute !important; right:24px;top:20px;
 }
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
     .container_5a292fe02104{
 	width:32px;height:2px;z-index:8;position:absolute !important;left:0px;top:0px;background:#d8edbed9;border-radius:8px 8px 8px 8px;
 }
