@@ -1095,7 +1095,7 @@ body
   margin: 0;
   display: none;
   z-index: 999;
-  right: 0;
+  right: 10px;
   overflow-x: hidden;
   overflow-y: hidden;	
   background-color: #ffffff
